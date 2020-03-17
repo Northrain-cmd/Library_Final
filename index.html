@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+
+  <div class="grid-container full">
+    <div class="grid-x grid-padding-x align-middle align-center">
+      <button class="cell small-12 medium-8 large-6 button" type="button" data-toggle="example-dropdown">Add a Book +</button>
+      <div class="dropdown-pane" style="z-index: 999;" data-position="bottom" data-alignment="center" id="example-dropdown" data-dropdown data-auto-focus="true">
+        <form autocomplete="off">
+      <div class="small-12 medium-10  cell">
+        <label>Title
+          <input type="text" name="title" placeholder="Book Title" required>
+        </label>
+      </div>
+      <div class="small-12 medium-10 cell">
+        <label>Author
+          <input type="text" name="author" placeholder="Book Author" required>
+        </label>
+      </div>
+      <div class="small-4 cell  large-4 ">
+        <label>Pages
+          <input type="number" name="pages" placeholder="Number of pages" min="1" required>
+        </label>
+      </div>
+      <div class="small-4 cell large-4">
+        <label>Year
+          <input type="number" name="year" placeholder="Publication Year" min="1" required>
+        </label>
+      </div>
+      <div class="small-4 medium-2 cell large-2  text-left readField">
+      <fieldset>
+        <input type="checkbox" name="isRead" value="Read" id="isReadButton"><label for="isReadButton">Read</label>
+      </fieldset>
+      </div>
+      <button type="submit" class=" small-12 medium-8 large-6  button large submit-button">Save</button>
+    </form>
+    
+  </div>
+    </div>
+  </div>
+   <div class="grid-container full">
+      <div class="grid-x grid-margin-x align-center card-container">
+       
+        </div>
+        </div>
+      </div>
+   </div>
+
+    <script src="libs/jquery/dist/jquery.js"></script>
+    <script src="libs/what-input/dist/what-input.js"></script>
+    <script src="libs/foundation-sites/dist/js/foundation.js"></script>
+    <script src="https://kit.fontawesome.com/b14cc21095.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
